@@ -12,11 +12,7 @@
   /*padding: 200px 0;*/
 }
 
-#slide1 {
-  background: url("http://f.fastcompany.net/multisite_files/coexist/imagecache/1280/poster/2012/11/1680856-poster-1280-10-smartest-european-cities-shutterstock-78340003-1.jpg") 50% 0 no-repeat fixed;
-}
-
-#slide1 #oneContainer {
+.centerBlock {
 	position: relative;
 	margin: 0 auto;
 	border-radius: 5px;
@@ -25,6 +21,13 @@
 	background-color: rgba(255,255,255,.25);
 	width: 900px;
 	height: 900px;
+}
+
+#slide1 {
+  background: url("http://f.fastcompany.net/multisite_files/coexist/imagecache/1280/poster/2012/11/1680856-poster-1280-10-smartest-european-cities-shutterstock-78340003-1.jpg") 50% 0 no-repeat fixed;
+}
+
+#slide1 #oneContainer {
 }
 
 #slide1 h1 {
@@ -43,6 +46,10 @@
 }
 
 #slide2 {
+}
+
+#slide2 #twoContainer {
+	top: 50px;
 }
 
 #slide3 {
