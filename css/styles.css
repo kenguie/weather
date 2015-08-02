@@ -1,0 +1,68 @@
+.picTemplate {
+  height: 900px;
+  margin: 0, auto;
+  /*padding: 200px 0 260px 0;*/
+  background-size: cover;
+}
+
+.nonPicTemplate {
+  background-color: #2A9C7A;
+  height: 50px;
+  margin: 0 auto;
+  /*padding: 200px 0;*/
+}
+
+#slide1 {
+  background: url("http://f.fastcompany.net/multisite_files/coexist/imagecache/1280/poster/2012/11/1680856-poster-1280-10-smartest-european-cities-shutterstock-78340003-1.jpg")50% 0 no-repeat fixed;
+}
+
+#slide1 #oneContainer {
+	position: relative;
+	margin: 0 auto;
+	border-radius: 5px;
+	/*padding-top: 200px;*/
+	/*text-align: center;*/
+	background-color: rgba(255,255,255,.25);
+	width: 900px;
+	height: 900px;
+}
+
+#slide1 h1 {
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	color: #553C08;
+  font-size: 4em;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  width: 850px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#slide2 {
+}
+
+#slide3 {
+  background: url("http://thewowstyle.com/wp-content/uploads/2015/01/beautiful-cities-20.jpg") 50% 0 no-repeat fixed;
+}
+
+#slide4 {
+}
+
+#slide5 {
+  background: url("http://www.blirk.net/wallpapers/1920x1200/big-cities-wallpaper-13.jpg") 50% 0 no-repeat fixed;
+}
+
+#slide6 {
+}
+
+#slide7 {
+  background: url("http://i.imgur.com/nUDchKj.jpg") 50% 0 no-repeat fixed;
+}
+
+
+
+
