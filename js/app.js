@@ -1,23 +1,41 @@
 
-function askTemp() {
-	var temp = prompt('Give me a temperature please.');
-	var transform = prompt('Would you like to transform that into Farenheit or Celcius? Type F or C.')
+window.onload = function() {
 
-	if (transform == "F" || transform == "f") {
-		cTof(temp);
-	} else if (transform == "C" || transform == "c") {
-		fToc(temp);
-	} else {
-		document.write('Sorry, you have to choose c or f.');
+  document.getElementById("submit").onclick = convert;
+
+  function convert() {
+  	var temp = document.getElementById("temp").value;
+  	var transform = document.getElementById("convert").value;
+
+  	if (isNaN(temp)) {
+  		document.getElementById("answer").innerHTML = 'Sorry, you have to enter a number for a temperature.';
+  		return false;
+  	}
+  
+	  if (transform == "F" || transform == "f") {
+			cTof(temp);
+		} else if (transform == "C" || transform == "c") {
+			fToc(temp);
+		} else {
+			document.getElementById("answer").innerHTML = 'Sorry, you have to choose c or f.';
+		};
+  };
+
+	function cTof(c) {
+		var answer = (((c*9)/5)+32);
+		checkFloat(answer);
 	};
-};
 
-var cTof = function(c) {
-	document.write(((c*9)/5)+32);
-};
+	function fToc(f) {
+		var answer = (((f-32)*5)/9);
+		checkFloat(answer);
+	};
 
-var fToc = function(f) {
-	document.write(((f-32)*5)/9);
+	function checkFloat(answer) {
+		if (answer % 1 === 0) {
+			document.getElementById("answer").innerHTML = answer;
+		} else {
+			document.getElementById("answer").innerHTML = answer.toFixed(2);
+		}
+	}
 };
-
-// askTemp();

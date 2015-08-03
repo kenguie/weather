@@ -48,12 +48,17 @@
 #slide2 {
 }
 
-#slide2 #twoContainer {
-	top: 50px;
-}
-
 #slide3 {
   background: url("http://thewowstyle.com/wp-content/uploads/2015/01/beautiful-cities-20.jpg") 50% 0 no-repeat fixed;
+}
+
+#slide3 #threeContainer {
+	text-align: center;
+}
+
+#slide3 #threeContainer h1 {
+	margin: 0;
+	padding-top: 100px;
 }
 
 #slide4 {
